@@ -12,7 +12,7 @@ import {
     startEraser,
     drawEraser,
     stopEraser
-} from "./tools/Eraser.js";
+} from "./Tools/Eraser.js";
 
 const canvas =
 document.getElementById("canvas");
