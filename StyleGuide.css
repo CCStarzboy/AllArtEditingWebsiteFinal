@@ -1,0 +1,148 @@
+body{
+
+    background:#202020;
+
+    color:white;
+
+    font-family:Arial, sans-serif;
+
+    text-align:center;
+
+}
+
+
+h1{
+
+    margin-top:20px;
+
+}
+
+
+.controls{
+
+    margin:20px;
+
+}
+
+
+#convertButton {
+    background: #27ae60;
+}
+
+#convertButton:hover {
+    background: #1f8a4d;
+}
+
+#saveButton {
+    background: #2f80ed;
+}
+
+#saveButton:hover {
+    background: #2368bf;
+}
+
+#clearButton {
+    background: #e67e22;
+}
+
+#clearButton:hover {
+    background: #c96a16;
+}
+
+.workspace{
+
+    display:flex;
+
+    flex-direction:column;
+
+    width:100%;
+
+    height:calc(100vh - 140px);
+
+}
+
+#toolbar{
+
+    width:100%;
+
+    height:70px;
+
+    background:#222;
+
+    display:flex;
+
+    flex-direction:row;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:10px;
+
+}
+
+.tool{
+
+    width:48px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#333;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.tool:hover{
+
+    background:#4b4b4b;
+
+    transform:scale(1.08);
+
+}
+
+.tool.active{
+
+    background:#3b82f6;
+
+    box-shadow:0 0 10px rgba(59,130,246,.6);
+
+}
+
+#canvasArea{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#bdbdbd;
+
+}
+
+#canvas{
+
+    background:white;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+#canvas.eraser{
+    cursor:none;
+}

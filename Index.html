@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+AllArt Editing Website
+</title>
+
+<link rel="stylesheet" href="StyleGuide.css">
+
+</head>
+
+
+<body>
+
+<h1>
+AllArt Editing Website
+</h1>
+
+<div class="controls">
+
+<input 
+type="file"
+id="imageInput"
+accept="image/*">
+
+<button id="convertButton">
+Convert
+</button>
+
+<button id="clearButton">
+Clear
+</button>
+
+<button id="saveButton">
+Save Drawing
+</button>
+
+</div>
+
+<div class="workspace">
+
+    <aside id="toolbar">
+
+        <button class="tool active" id="selectTool" title="Select">
+            ↔
+        </button>
+
+        <button class="tool" id="brushTool" title="Brush">
+            🖌️
+        </button>
+
+        <button class="tool" id="eraserTool" title="Eraser">
+            🧹
+        </button>
+
+    </aside>
+
+    <main id="canvasArea">
+
+        <canvas 
+        id="canvas"
+        width="1000"
+        height="700">
+        </canvas>
+
+    </main>
+
+</div>
+
+<img 
+id="sourceImage"
+hidden>
+
+<script type="module" src="Java/Script.js"></script>
+
+</body>
+
+</html>
